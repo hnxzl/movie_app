@@ -32,7 +32,7 @@ class MovieHomePage extends StatefulWidget {
 
 class _MovieHomePageState extends State<MovieHomePage> {
   final PageController _pageController = PageController(
-    viewportFraction: 0.75, // Lebih kecil untuk efek center yang lebih baik
+    viewportFraction: 0.75, 
     initialPage: 0,
   );
 
@@ -140,12 +140,12 @@ class _MovieHomePageState extends State<MovieHomePage> {
 
               _buildMovieSection(title: 'Top Rated', movies: topRatedMovies),
 
-              const SizedBox(height: 80), // Extra space untuk bottom nav
+              const SizedBox(height: 80), 
             ],
           ),
         ),
       ),
-      // Bottom Navigation Bar
+
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: const Color(0xFF1E1E1E),
         selectedItemColor: Colors.red,
